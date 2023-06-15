@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+  transition: all .2s linear;
+  text-transform: capitalize;
+  /*--or content box--*/
+}
+
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 15px 30px;
+  padding: 8px;
+}
+
+.container {
+  background-color: lightblue;
+  padding: 5px 20px 20px 15px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  min-height: 100vh;
+ 
+}
+
+form{
+    box-shadow: 0 5px 10px rgba(0,0,0,.1)}
+
+
+input[type="submit"] {
+  height: 40px;
+  width: 100%;
+  background-color: #27ae60;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #2ecc71;
+}
+
+button{
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: bisque;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.main_heading {
+  text-align: center;
+}
+
+.container .flex {
+  display: flex;
+  gap: 15px;
+}
+
+
+span{
+  background-color: #ffff;
+  padding: 5px; }
+  
+fieldset {
+  background-color: #ffff;
+  width: 100%;
+  padding: 5px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<form action="/submit-form" method="POST">
+  <div class="container">
+    <h1 class="main_heading">PAYMENT FORM</h1>
+    <h2>Contact Information</h2>
+    <div>Name: <input type="text" name="name" required placeholder="Sarthak Gautam"></div>
+    <fieldset>
+      <legend><span>Gender:</span></legend>
+      <p>Male <input type="radio" name="gender" required id="male"></p>
+      <p>Female <input type="radio" name="gender" required id="female"></p>
+    </fieldset>
+
+    <p>Address:<textarea cols="40" rows="3" name="address" placeholder="Your address here"></textarea></p>
+    <div>Email: <input type="email" name="email" required id="email" placeholder="abc@xyz.com"></div>
+    <div>Pincode: <input type="number" required name="pincode" id="pincode" placeholder="44200"></div>
+   
+
+    <h2>Billing Information</h2>
+
+<p> Cardtype:
+<select name="card_type" id="card_Type" required >
+
+<option value="">----Select a card type-----</option>
+
+
+<option value="visa">Visa</option>
+<option value="rupay">Rupay</option>
+<option value="mastercard">Mastercard</option>
+
+</select>
+</p>
+
+
+<p>Card Number:<input type= "number" name= "cardno" required id="cardno" placeholder="1111-2222-3333-4444"></p>
+
+<div class="flex">
+<p >Expiration date:<input type= "date" required name= "exp_date" id="exp_date" placeholder="MM/DD/YYYY">
+<p>CVV:<input type= "password" name= "cvv" required id="cvv"></p>
+</div>
+
+<p><input type= "submit" onclick="alert('Pay Now!')" value="PayNow"> </p>
+
+
+ <button type="button" onclick="alert('Submit form!')">Submit</button>
+
+<!---- Using <button> element --
+
+<form action="/submit-form" method="POST">
+ <button type="submit">Submit</button>
+
+
+ -->
+
+ </div>
+ </form>
+</body>
+</html>
+
+

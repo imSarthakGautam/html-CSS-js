@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Cards</title>
+    <style>
+
+      .pricing-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap : wrap;
+        padding : 10rem;
+        gap:20 px;
+      }
+      
+      .pricing-card {
+        width: 250px;
+        padding: 20px;
+        border: 1px solid lightgray;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        margin-bottom: 10px
+      }
+      
+button:hover{
+  
+  background-color:#08b062;
+}
+      
+      button{
+      
+  background-color: #008F4C; /* Set the background color */
+  color: white; /* Set the text color */
+  border: none; /* Remove the border */
+  border-radius: 25px;
+  padding: 10px 20px; /* Add some padding for better visual appearance */
+  font-size: 16px; /* Set the font size */
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+
+
+      
+    </style>
+  </head>
+  <body>
+  <h1 style="text-align: center;"> Sarthak's Skillshare classes</h1>
+  
+    <div class="pricing-container">
+    
+     <div class="pricing-card">
+        <h2>Free</h2>
+        <p>$0/month</p>
+        <ul>
+          <li>Daily Newslater</li>
+          <li>3 articles a month</li>
+          </ul>
+        <button type="button" onclick="alert('Sign up!')">Sign Up</button>
+        
+        
+      </div>
+      <div class="pricing-card">
+        <h2>Basic</h2>
+        <p>$10/month</p>
+        <ul>
+          <li>Daily Newslater</li>
+          <li>Weekly Podcasts</li>
+          <li>Monthly Qand A</li>
+        </ul>
+        <button type="button" onclick="alert('Sign up!')">Sign Up</button>
+      </div>
+      <div class="pricing-card">
+        <h2>Pro</h2>
+        <p>$20/month</p>
+        <ul>
+          <li>Daily Newslater</li>
+          <li>Exclusive Podcasts</li>
+          <li>Weekly Qand A</li>
+          <li>Free Merchandise</li>
+        </ul>
+        <button type="button" onclick="alert('Sign up!')">Sign UP </button>

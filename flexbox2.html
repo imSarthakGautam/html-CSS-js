@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Navigation Bar</title>
+    <style>
+    
+     .container
+        {
+        display:flex;
+        flex-wrap:wrap;
+        }
+        .profile1,.profile2,.profile3
+        {
+    margin-left: 10px;
+    width:135px;
+    margin-top: 10px;
+    box-shadow:0px 0px 3px 3px rgba(0,0,0,0.15)
+}
+.img{
+    width:134px;
+    height:150px;
+    object-fit: cover;    
+}
+.name{
+    font-family: Arial;
+    font-size: medium;
+    font-weight: bolder;
+    margin-left: 5px;
+    margin-top:8px;
+    margin-bottom:0px;
+}
+.friendlist{
+    margin-top:1px;
+    margin-left: 5px;
+    margin-bottom:0px;
+    font-family: Arial;
+    font-size: 12px;
+    color: gray;
+
+}
+button{
+    margin-top: 8px;
+    margin-left:5px;
+    margin-bottom:8px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    font-family: Arial;
+    font-size: 13px;
+    color:white;
+    background-color: rgb(24, 119, 242);
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+     .flex-container {
+  display: flex;
+  flex-wrap:no wrap;
+  font-family: Arial;
+  font-size: 15px;
+  
+}
+
+.flex-item {
+  flex-basis: 200px;
+  height: 100px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+   box-shadow:0px 0px 3px 3px rgba(0,0,0,0.65)
+}
+
+.flex-item-1 {
+  background-color: #4BC0C0;
+  color: white;
+  padding: 20px
+  
+}
+
+.flex-item-2 {
+  background-color: #36A2EB;
+  color: white;
+  padding: 20px
+}
+
+.flex-item-3 {
+  background-color: #36A2EB;
+  color: white;
+  padding: 20px
+}
+
+.flex-item-4 {
+  background-color: #36A2EB;
+  color: white;
+  padding: 20px
+}
+   
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+  <div class="flex-item-2">Home</div>
+  <div class="flex-item-1"> <span class="highlight">Friend Request</span></div>
+  <div class="flex-item-3">My Profile</div>
+  <div class="flex-item-4">Settings</div>
+
+</div>
+
+ <div class="container">
+        <div class="profile1">
+            <img class="img" src="images/img.jpg" >
+            <p class="name">
+                Nabidra
+            </p>
+            <p class="friendlist">
+               2 mutual friends
+            </p>
+            <button>
+                Add Friend
+            </button>
+        </div>
+        <div class="profile2">
+            <img class="img" src="images/itachi.jpg" >
+            <p class="name">
+                Naveen
+            </p>
+            <p class="friendlist">
+               3 mutual friends
+            </p>
+            <button>
+                Add Friend
+            </button>
+        </div>
+        <div class="profile3">
+            <img class="img" src="images/levi.jpg" >
+            <p class="name">
+                NABIN
+            </p>
+            <p class="friendlist">
+               4 mutual friends
+            </p>
+            <button>
+                Add Friend
+            </button>
+        </div>
+        </div>
+  </body>
+</html>

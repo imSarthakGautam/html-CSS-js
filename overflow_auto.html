@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Overflow Auto Example</title>
+    <style>
+      .container {
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+        overflow: auto;
+        padding:30px;
+        margin: 20px
+      }
+      
+      
+      .container2 {
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+        overflow: hidden;
+         
+        margin: 20px
+      }
+      
+      .container3 {
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+        overflow: scroll;
+        margin: 20px
+      }
+      
+       .container4 {
+        width: 300px;
+        height: 100px;
+        border: 1px solid black;
+        overflow-x: auto;
+        overflow-y: hidden
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>This is some long content that exceeds the dimensions of the container element. When the content overflows, scrollbars will appear automatically.
+      </p> This value is commonly used when you want scrollbars to appear only when the content exceeds the dimensions of the container. It automatically displays scrollbars when necessary, but if the content fits within the container, no scrollbars will be shown.<p>
+      
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero illo laborum cupiditate ducimus labore vel. Pariatur, enim eaque molestias ipsam quidem voluptatem dignissimos minus quos fuga, temporibus vel, expedita inventore!</p>
+      </div>
+      
+ 
+    <div class="container2">
+      <p>This is some long content that exceeds the dimensions of the container element. The overflowed content will be hidden.</p>
+    </div>
+  
+<div class="container3">
+      <p>This is some long content that exceeds the dimensions of the container element. Scrollbars will always be visible.</p>
+    </div>
+   
+   <div class="container4">
+      <p>This is some long content that exceeds the width of the container element. Horizontal scrolling will be available, but vertical overflow will be hidden.
+      This is some long content that exceeds the width of the container element. Horizontal scrolling will be available, but vertical overflow will be hidden.
+       This is some long content that exceeds the width of the container element. Horizontal scrolling will be available, but vertical overflow will be hiddenThis is some long content that exceeds the width of the container element. Horizontal scrolling will be available, but vertical overflow will be hidden. This is some long content that exceeds the width of the container element. Horizontal scrolling will be available, but vertical overflow will be hidden kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+       This is some long content that exceeds the width of the container element. Horizontal scrolling will be available, but vertical overflow will be hidden.</p>
+       
+    </div>
+  </body>
+</html>
