@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.container {
+        display: block; /* Ensure the container behaves as a block-level element */
+        /* Add any other necessary styles */
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="pname"></div>
+        
+        <div class="entry"> 
+            <label for="userip">Your Guess 😊</label>
+            <input type="text" id="userip" placeholder="Enter numbers 1-100">
+            <input type="submit" id="sub" value="submit your guesses">
+        </div>
+
+        <div class="stats">
+            <h3> No of tries left :    <span id="nooftry"></span>    </h3>
+            <h3>Guessed Numbers : <span id="guessednos"></span> </h3>
+        </div>
+
+        <div class="msg"></div>
+        
+    </div>
+</body>
+<script src="numberchecker.js"></script>
+</html>
