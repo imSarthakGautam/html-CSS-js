@@ -1,1 +1,2 @@
-This is a github repo formed during the learning phase of my HTML-CSS.
+This is a github repo formed during the learning of  HTML-CSS-JS.
+This repo contains some mini projects that I have built throughout my learning journey
